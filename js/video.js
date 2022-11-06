@@ -56,13 +56,13 @@ document.querySelector("#skip").addEventListener("click", function() {
 
 document.querySelector("#mute").addEventListener("click", function() {
 	
-	if (video.volume == 0) {
-		video.volume = 1
+	if (video.muted == true) {
+		video.muted = false
 		document.querySelector("#mute").innerHTML = "Mute"
 		console.log("Mute");
 	}
 	else {
-		video.volume = 0
+		video.muted = true
 		document.querySelector("#mute").innerHTML = "Unmute"
 		console.log("Unmute");
 	}
